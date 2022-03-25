@@ -13,7 +13,6 @@ The code of this tool is based on https://makecode.microbit.org/blocks-embed
 Install the dependencies...
 
 ```bash
-cd svelte-app
 npm install
 ```
 
