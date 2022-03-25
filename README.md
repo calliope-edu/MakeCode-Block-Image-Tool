@@ -1,5 +1,10 @@
 # MakeCode Block Images
 
+![image](https://user-images.githubusercontent.com/3764089/160157306-5494bd2d-65b4-4ef3-89f0-146b8bf321c5.png)
+
+## Info
+
+The code of this tool is based on https://makecode.microbit.org/blocks-embed 
 
 ## Get started
 
