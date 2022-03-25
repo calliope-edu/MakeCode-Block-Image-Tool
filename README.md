@@ -41,4 +41,10 @@ You can run the newly built app with `npm run start`. This uses [sirv](https://g
 
 ## Deploying to the web
 
-Copy the content of `/public` to your webserver.
+Run the build:
+
+```bash
+npm run build
+```
+
+And copy the content of `/public` to your webserver.
