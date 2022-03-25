@@ -1,59 +1,58 @@
 <main class="container">
-<hgroup>
-    <h1>MakeCode Block Images</h1>
-    <h2>Mit diesem Tool können die Blöcke aus MakeCode anhand von Code als Bilder in SVG und als PNG erstellt werden.</h2>
-</hgroup>
+    <hgroup>
+        <h1>MakeCode Block Images</h1>
+        <h2>Mit diesem Tool können die Blöcke aus MakeCode anhand von Code als Bilder in SVG und als PNG erstellt werden.</h2>
+    </hgroup>
 
-<form>
+    <form>
 
-    <!-- Grid -->
+        <div class="grid">
+            <div class="grid">
+    
+                <label for="snippet">
+                    Snippet Modus<br>
+                    <input type="checkbox" name="snippet" bind:checked="{snippetModeBool}" role="switch" style="display:block; margin:32px 0px;" />
+                    <small>Umschließenden Start-Block entfernen</small>
+                </label>
+            
+                <label for="scalePng">
+                    PNG Skalieren
+                    <input type="number" name="scalePng" min=0 bind:value={scalePng} />
+                    <small>Mit einem größeren Wert erhält man ein großeres PNG Bild.</small>
+                </label>
+
+            </div>
+
+            <label for="projectUrl">
+                MakeCode Projekt Link (Optional)
+                <input type="text" name="projectUrl" bind:value={packageIdStrURL} />
+                <small>MakeCode Projekt-URL über die Teilen funktion erstellen und hier eingeben, um dort geladene Erweiterungen verwenden zu können oder das ganze Projekt zu Rendern.</small>
+            </label>
+    
+        </div>
+  
+        <label for="code">
+            Code:
+            <textarea name="code" bind:value={code}></textarea>
+            <small>Leer lassen und oben einen MakeCode Projekt Link angeben, um ein ganzes projekt zu rendern.</small>
+        </label>
+  
+    </form>
+
+
     <div class="grid">
-  
-      <!-- Markup example 1: input is inside label -->
-      <label for="snippet">
-        Snippet Modus<br>
-        <input type="checkbox" name="snippet" bind:checked="{snippetModeBool}" role="switch" />
-        <br><small>(Umschließenden Start-Block entfernen)</small>
-      </label>
-  
-      <label for="scalePng">
-        PNG Skalieren
-        <input type="number" name="scalePng" min=0 bind:value={scalePng} />
-        <small>Mit einem größeren Wert erhält man ein großeres PNG Bild.</small>
-      </label>
-  
+        <a download="bild.svg" bind:this={svgLink}><button>SVG Herunterladen</button></a> 
+        <a download="bild.png" bind:this={pngLink}><button>PNG Herunterladen</button></a>
     </div>
-  
-    <!-- Markup example 2: input is after label -->
-    <label for="projectUrl">
-        MakeCode Projekt Link (Optional)
-        <input type="text" name="projectUrl" bind:value={packageIdStrURL} />
-        <small>MakeCode Projekt-URL über die Teilen funktion erstellen und hier eingeben, um dort geladene Erweiterungen verwenden zu können oder das ganze Projekt zu Rendern.</small>
-      </label>
-  
-      <label for="code">
-          Code:
-      <textarea name="code" bind:value={code}></textarea>
-      <small>Leer lassen und oben einen MakeCode Projekt Link angeben, um ein ganzes projekt zu rendern.</small>
-      </label>
-  
-  </form>
 
 
-  <div class="grid">
-
-<a download="bild.svg" bind:this={svgLink}><button>SVG Herunterladen</button></a> 
-<a download="bild.png" bind:this={pngLink}><button>PNG Herunterladen</button></a>
-
-</div>
-
-
-<div class="item codeImage">
-    <div class="grid">
-		<div class="image-container"></div>
-		<div class="image-containerPNG" bind:this={pngContainer}></div>
+    <div class="item codeImage">
+        <div class="grid">
+            <div class="image-container"></div>
+            <div class="image-containerPNG" bind:this={pngContainer}></div>
         </div>
 	</div>
+
 </main>
 
 <pre class="makecodeSnippet lds-dual-ring" id="snippet_1">
