@@ -1,5 +1,7 @@
 # MakeCode Block Images
 
+This tool is available at https://go.calliope.cc/tools/makecode/codeimages/
+
 ![image](https://user-images.githubusercontent.com/3764089/160157306-5494bd2d-65b4-4ef3-89f0-146b8bf321c5.png)
 
 ## Info
