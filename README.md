@@ -2,7 +2,7 @@
 
 This tool is available at https://go.calliope.cc/tools/makecode/codeimages/
 
-![image](https://user-images.githubusercontent.com/3764089/160157306-5494bd2d-65b4-4ef3-89f0-146b8bf321c5.png)
+![image](https://user-images.githubusercontent.com/3764089/160183484-ab69bc8e-11af-4dc5-9f3c-5a5eb74996e6.png)
 
 ## Info
 
