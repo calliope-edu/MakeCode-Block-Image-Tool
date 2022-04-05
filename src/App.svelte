@@ -31,7 +31,7 @@
             <label for="projectUrl">
                 MakeCode Projekt Link (Optional)
                 <input type="text" name="projectUrl" placeholder="https://makecode.calliope.cc/..." bind:value={packageIdStrURL} />
-                <small>MakeCode Projekt-URL über die Teilen funktion erstellen und hier eingeben, um dort geladene Erweiterungen verwenden zu können oder das ganze Projekt zu Rendern.</small>
+                <small>MakeCode Projekt-URL über die Teilen Funktion erstellen und hier eingeben, um dort geladene Erweiterungen verwenden zu können oder das ganze Projekt zu rendern.</small>
             </label>
     
         </div>
@@ -39,15 +39,15 @@
         <label for="code">
             Code
             <textarea name="code" bind:value={code} placeholder="basic.showIcon(IconNames.Heart) ..."></textarea>
-            <small>Leer lassen und oben einen MakeCode Projekt Link angeben, um ein ganzes projekt zu rendern.</small>
+            <small>Leer lassen und oben einen MakeCode Projekt Link angeben, um ein ganzes Projekt zu rendern.</small>
         </label>
   
     </form>
 
 
     <div class="grid">
-        <a download="bild.svg" bind:this={svgLink}><button>SVG Herunterladen</button></a> 
-        <a download="bild.png" bind:this={pngLink}><button>PNG Herunterladen</button></a>
+        <a download="bild.svg" bind:this={svgLink}><button>SVG herunterladen</button></a> 
+        <a download="bild.png" bind:this={pngLink}><button>PNG herunterladen</button></a>
     </div>
 
     <div class="item codeImage">
@@ -56,6 +56,23 @@
             <div class="image-containerPNG" bind:this={pngContainer}></div>
         </div>
 	</div>
+
+    <hr style="margin: 50px 0px;">
+    <a href="https://github.com/calliope-edu/MakeCode-Block-Image-Tool" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-Logo" />
+    </a>
+
+    <a href="https://github.com/calliope-edu/MakeCode-Block-Image-Tool" target="_blank">
+        <img src="https://badgen.net/github/last-commit/calliope-edu/MakeCode-Block-Image-Tool" alt="GitHub last commit" />
+    </a>  
+
+    <a href="https://github.com/calliope-edu/MakeCode-Block-Image-Tool/blob/master/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/calliope-edu/MakeCode-Block-Image-Tool.svg" alt="MIT License" />
+    </a>
+
+    <a href="https://github.com/calliope-edu/MakeCode-Block-Image-Tool/issues" target="_blank">
+        <img src="https://img.shields.io/github/issues/calliope-edu/MakeCode-Block-Image-Tool.svg" alt="GitHub open issues" />
+    </a>
 
 </main>
 
