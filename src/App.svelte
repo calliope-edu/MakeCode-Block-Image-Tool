@@ -2,7 +2,7 @@
     <hgroup>
         <h1>MakeCode Block Bilder für
             <select id="fruit" required style='display:inline-block; width:auto' bind:value={editorURL}>
-              <option value='https://makecode.calliope.cc/' selected>Calliope</option>
+              <option value='https://makecode.calliope.cc/' selected>Calliope mini</option>
               <option value='https://makecode.microbit.org/'>Microbit</option>
             </select>
         </h1>
